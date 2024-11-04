@@ -7,11 +7,11 @@ float calculate(float weight, float height) {
 }
 
 main() {
-	float weight, height, bmi;
-	printf("Enter your weight. ");
-	scanf("%f", &weight);
+	float height, weight, bmi;
 	printf("Enter your height. ");
 	scanf("%f", &height);
+	printf("Enter your weight. ");
+	scanf("%f", &weight);
 	height = height/100;
 	bmi = calculate(weight, height);
 	printf("Your BMI is %.2f. \n", bmi);
@@ -23,6 +23,6 @@ main() {
 	}else if (bmi >=25 && bmi <29.9){
 		printf("You are overweight");
 	}else if (bmi >30) {
-		printf("Please consult a doctor!!");
+		printf("Please go execise!!");
 	}
 }
